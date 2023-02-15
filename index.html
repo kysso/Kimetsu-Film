@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer Film</title>
+    <link rel="stylesheet" href="AnuncioFilme/style/style.css">
+    <link rel="stylesheet" href="AnuncioFilme/style/reset.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="AnuncioFilme/image/demonslayer (2).png" alt="logo kimetsu">
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="informações">
+            <img class="imagemTitulo" src="AnuncioFilme/image/escrita.png" alt="">
+            <p class="descricao"> do Brasil!! O recente filme que inicia a 3ª temporada do anime Kimetsu no Yaiba (
+                Demon
+                Slayer ) vai estrear no Brasil no começo deste ano. As informações chegaram através do site
+                konnichiwafestival que confirma a exibição nos cinemas Cinépolis, Cinemark e UCI no momento desta
+                publicação. </p>
+
+            <button class="botao-trailer" onclick="modalAberto()">  Trailer </button>
+        </div>
+
+        <div>
+            <img class="kimetsu" src="AnuncioFilme/image/kimetsuxx.png" alt="">
+
+        </div>
+
+        <div class="modal">
+            <div class="conteudo">
+                <span class="fechar-Modal" onclick="modalFechado()">X</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/SWAMTXfqer0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./AnuncioFilme/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+    font-family: 'Bangers', cursive;
+    background: linear-gradient(45deg, #ffffff 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #000000 0%, #000000 100%), linear-gradient(225deg, #f3f3f3 0%,
+     #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #000000 35%, #000000 60%, #07456F 60%, #000000 67%, #0F0A3C 67%, #0F0A3C 100%);
+    background-blend-mode: screen, overlay, hard-light, normal;
+
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 9;
+
+}
+
+.cabecalho .logo {
+    width: 65px;
+
+}
+
+.cabecalho .menu {
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.cabecalho nav li a {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.cabecalho nav li a:hover {
+    background-color: #e100ff6c;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px 30px;
+}
+
+.imagemTitulo {
+    width: 300px;
+    margin-left: 70px;
+}
+
+.kimetsu {
+    margin-left: 200px;
+
+}
+
+
+.container .imagemTitulo {
+    max-width: 500px;
+}
+
+.container .descricao {
+    color: #dd6b00cb;
+    width: 500px;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.container .botao-trailer {
+    background-color: #ff0000c7;
+    color: #ffffff;
+    margin-left: 200px;
+    padding: 15px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-color: red;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s all case-in-out;
+}
+
+.container .botao-trailer:hover {
+    transform: scale(1.1);
+}
+
+.fundo-video {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(red, green, blue, alpha);
+    opacity: 90;
+    visibility: hidden;
+}
+
+.conteudo-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+
+}
+
+.fechar-modal {
+    background-color: rgb(245, 245, 245);
+    color: #ffffff;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal .iframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.aberto {
+    opacity: 1;
+    visibility: visible;
+}
